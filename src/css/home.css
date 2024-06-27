@@ -1,0 +1,149 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --black: rgb(0, 0, 0);
+  --mainFontColor: rgb(0, 0, 0);
+  --navFontColor: rgb(0, 0, 0);
+}
+
+@font-face {
+  font-family: "UVN-Co-dien";
+  src: url("../fonts/UVN-Co-dien/UVN\ Co\ Dien\ Bold.woff2"),
+    url("../fonts/UVN-Co-dien/UVN\ Co\ Dien\ Bold.woff");
+}
+
+@font-face {
+  font-family: "IBMPlexMono";
+  src: url("../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.woff2"),
+    url("../fonts/IBM_Plex_Mono/IBMPlexMono-Regular.woff");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  background: url(../images/home-bg-img.png);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#wrapper {
+  margin: auto;
+}
+
+#header {
+  background: var(--white);
+  position: relative;
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  color: var(--navFontColor);
+
+  .navbar {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100rem;
+    margin: auto;
+
+    button {
+      border: var(--white);
+      background: none;
+      font-weight: bolder;
+      font-size: 1.5rem;
+      padding: 0.8rem 1.2rem;
+      border-bottom: 2px solid transparent;
+    }
+
+    button:hover, button:focus{
+      /* border-bottom: var(--white) solid 2px; */
+      border-bottom: var(--black) groove 2px;
+    }
+
+    button:active {
+      background-color: var(--black);
+      color: var(--white);
+      transition: 0.2s;
+    }
+  }
+}
+
+/* #header::before{
+  content: "";
+  position: absolute;
+  display: block;
+  top: -4px;
+  bottom: -4px;
+  right: -4px;
+  left: -4px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+} */
+
+#main {
+  width: min(90%, 60rem);
+  color: var(--mainFontColor);
+  padding-bottom: 3rem;
+  margin: 5rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.59);
+  border-radius: 10px 0px 10px 0px;
+  position: relative;
+  border: 5px solid rgb(255, 255, 255);
+
+  .staffImg {
+    margin: auto;
+    min-height: 9.375em;
+    border: 0.3rem solid black;
+    width: min(50rem, 85%);
+    border-radius: 2%;
+  }
+
+  #name {
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem;
+    text-align: center;
+
+    #japName {
+      font-size: 3rem;
+    }
+
+    #engName {
+      font-size: 1.7rem;
+      font-weight: bold;
+    }
+  }
+
+  #about {
+    width: min(90%, 50rem);
+    text-align: center;
+    margin: 2rem auto 0 auto;
+
+    #description {
+      text-align: center;
+    }
+  }
+}
+
+#main::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -15px;
+  bottom: -15px;
+  right: -15px;
+  left: -15px;
+  background-color: none;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 15px 0px 15px 0px;
+}
