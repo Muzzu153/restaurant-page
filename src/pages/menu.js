@@ -82,13 +82,20 @@ const Dishes = () => {
       dishName.textContent = el.name;
       dishPrice.textContent = el.price;
 
+      const wholeDish = document.createElement("div");
+      wholeDish.classList.add("whole-dish");
+
       dishImage.classList.add("dish-image");
       dishInfo.classList.add("dish-info");
       dishPrice.classList.add("dish-price");
+      const orderBtn = document.createElement("button")
+      orderBtn.classList.add("order-btn");
+      orderBtn.textContent = "ORDER NOW"
 
       singleDish.classList.add("single-dish");
       dishInfo.append(dishName, dishPrice);
-      singleDish.append(dishImage, dishInfo);
+      wholeDish.append(dishImage, dishInfo);
+      singleDish.append(wholeDish,orderBtn)
 
       div.append(singleDish);
     };

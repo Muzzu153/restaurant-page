@@ -17,7 +17,7 @@ html {
 body {
   font-size: 1.6rem;
   line-height: 1.2;
-  /* background: ; */
+  background: #66524a;
 }
 
 #wrapper {
@@ -50,14 +50,35 @@ body {
 }
 
 .single-dish {
-  /* background: rgb(0, 0, 0); */
   margin: 1rem;
   width: 90%;
   display: flex;
   padding: 1.5rem;
   border-radius: 8px 0px 8px 0px;
-  /* border-radius: 5%; */
-  /* border: 2px solid white; */
+  flex-direction: column;
+  background-color: rgb(243, 239, 239);
+  border: solid ;
+  .whole-dish{
+    display: flex;
+  }
+
+  button{
+    width: 48%;
+    padding: 1.2rem;
+    color: white;
+    border: none;
+    background: #ce2525;
+    margin: 1rem auto;
+  }
+
+  button:hover{
+    background: #c02020;
+  }
+
+  button:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+  }
 
   .dish-image{
     width: 50%;
@@ -69,11 +90,9 @@ body {
     text-align: center ;
     display: block;
     margin: auto;
-    /* color: rgb(255, 255, 255); */
 
     .dish-price{
       margin-top: 1rem;
-      /* color: white; */
       background: goldenrod;
       width: 50%;
       padding: 0.6rem;
