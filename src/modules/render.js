@@ -1,8 +1,7 @@
-import { header } from "./header";
 const renderPage = () => {
     const wrapper = document.getElementById("wrapper")
-    while(wrapper.hasChildNodes()){
-        wrapper.removeChild(wrapper.firstChild)
+    while(wrapper.lastChild.id !=="header"){
+        wrapper.removeChild(wrapper.lastChild)
     }
     return wrapper
 };
