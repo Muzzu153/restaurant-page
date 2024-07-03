@@ -121,7 +121,7 @@ const createMenuMain = () => {
 
 const loadMenu = () => {
   const wrapper = document.getElementById("wrapper");
-  wrapper.append(createHeader(), createMenuMain());
+  wrapper.append(createMenuMain());
   return wrapper;
 };
 

@@ -105,7 +105,7 @@ const createContactUS = () => {
 const loadContactUS = () => {
   const wrapper = document.getElementById("wrapper");
 
-  wrapper.append(createHeader(), createContactUS());
+  wrapper.append(createContactUS());
 
   return wrapper;
 };

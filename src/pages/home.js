@@ -1,5 +1,5 @@
 import "../css/home.css";
-import createHeader  from "../modules/header";
+import loadHeader  from "../modules/header";
 import dndCharacters from "../images/staffImg.png";
 
 // function createHomeBackground() {
@@ -46,7 +46,7 @@ function createHomeMain() {
 
 function loadHome() {
   const wrapper = document.getElementById("wrapper");
-  wrapper.append(createHeader(), createHomeMain());
+  wrapper.append(createHomeMain());
   return wrapper
 }
 
