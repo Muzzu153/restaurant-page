@@ -16,6 +16,16 @@ module.exports = {
       {
         test: /\.(jpg|png|svg|jpeg|gif)$/i,
         type: "asset/resource",
+        generator: {
+          filename: "./images/[name][ext]",
+        },
+      },
+      {
+        test: /\.(woff|woff2)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "./fonts/[name][ext]",
+        },
       },
     ],
   },

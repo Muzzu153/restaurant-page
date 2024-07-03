@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+#wrapper {
+  margin: auto;
+}
+
+#contact-us {
+
+  width: min(85%, 60rem);
+  display: flex;
+  margin: 2rem auto;
+  border: white 2px solid;
+  flex-direction: column;
+
+  #staff-members{
+    margin: 2rem auto 0 auto;
+    border: 5px solid rgb(255, 0, 0);
+    width: 40rem;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+
+      .staff-info {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        /* border: 2px solid black; */
+        /* background: wheat; */
+        img {
+          width: 50%;
+          /* height: 50%; */
+          border: 2px solid black;
+          margin: auto;
+        }
+
+        .staff-name{
+          margin: auto;
+        }
+      }
+  }
+
+}

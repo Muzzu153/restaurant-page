@@ -1,0 +1,35 @@
+#header {
+    background: var(--white);
+    position: relative;
+    margin-top: 1.5rem;
+    z-index: 100;
+    padding: 0.8rem;
+    color: var(--navFontColor);
+  
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100rem;
+      margin: auto;
+  
+      button {
+        border: var(--white);
+        background: none;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        padding: 0.8rem 1.2rem;
+        border-bottom: 2px solid transparent;
+      }
+  
+      button:hover{
+        border-bottom: var(--black) groove 2px;
+      }
+  
+      button:active, button:focus {
+        background-color: var(--black);
+        border-bottom: var(--black) groove 2px;
+        color: var(--white);
+        transition: 0.2s;
+      }
+    }
+  }
